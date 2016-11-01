@@ -1,0 +1,326 @@
+body{
+    margin: 0 auto;
+    padding: 0px;
+    border:0px;
+}
+a{
+    text-decoration: none;
+}
+
+.cont-centro{
+    height:900px;
+    width:85%;
+    background: #F4F4F4;
+    float:right;
+    padding: 30px;
+
+}
+/*Topo*/
+#topo{
+    height:20px;
+    width: 90%;
+    background:#222;
+    float:right;
+
+}
+#txtTopo{
+    color:#fff;
+    float:left;
+    text-align: center;
+}
+#btnTopo{
+    float:right;
+    text-align: right;
+    margin-right: 30px;
+    color:#fff;
+}#btnTopo:hover{
+    cursor:pointer;
+    text-decoration: underline;
+}
+/*Fim Topo*/
+/*Menu Lateral*/
+#menu{
+    height:900px;
+    width:15%;
+    background:#222;
+    position: fixed;
+    clear: both;
+    /*float:left;*/
+}
+#logo{
+
+    height: 100px;
+    width: 100%;
+    background: url(Imagens/logo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.ItemMenu{
+    margin:0 auto;
+    height: 50px;
+    width: 100%;
+    text-align: left;
+    border:1px #222 solid;
+    padding-left: 5px;
+}
+.ItemMenu:hover{
+    background:#333;
+}
+.TextoMenu{
+    font-size: 15px;
+    margin-top: 10px;
+    color:#fff;
+}
+/*Fim Menu Lateral*/
+/*Tabs*/
+.TabControl{ 
+    width:70%; 
+    overflow:hidden; 
+    height:auto;
+    float:left;
+}
+.TabControl #header{ 
+    width:100%;  
+    overflow:hidden; 
+    cursor:pointer;
+}
+.TabControl #content{ 
+    width:100%; 
+    overflow:hidden; 
+    height:100%; 
+}
+.TabControl .abas{
+    display:inline;
+}
+.TabControl .abas li{
+    float:left
+}
+.aba{
+    width:200px; 
+    height:30px; 
+    text-align:center; 
+    padding-top:5px; 
+    background:#c9c9c9;
+    border:1px solid #000;
+}
+.ativa{
+    width:200px; 
+    height:30px; 
+    text-align:center; 
+    padding-top:5px; 
+    background:#494949;
+}
+.ativa span, .selected span{
+    color:#fff
+}
+.TabControl #content{
+    background:#e5e5e5;
+}
+.TabControl .conteudo{
+    width:100%;  
+    background:#fcfff5; 
+    display:none; 
+    height:100%;
+    color:#fff;
+    border:1px solid #494949;
+}
+.selected{
+    width:200px; 
+    height:30px; 
+    text-align:center; 
+    padding-top:5px; 
+    background:#494949;
+    border:0px;
+}
+/*Fim Tabs*/
+/*Calendario*/
+* {box-sizing:border-box;}
+ul {list-style-type: none;}
+
+.month {
+    padding: 30px 25px;
+    width: 100%;
+    background: #494949;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    height:50px;
+    padding-top: 15px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:20px;
+    color: #777;
+    border: 1px solid #ccc;
+}
+.days li:hover{
+    background: #aaa;
+    color: #fff;
+}
+
+.days .active {
+    background: #aaa;
+    color: #fff;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+/*Fim Calendario*/
+/*Bloco*/
+#blocoHome{
+    background: #f00;
+    height:500px;
+    width: 25%;
+    float:right;
+    margin-bottom:20px;
+}
+#blocoRH{
+    background: #f00;
+    height:330px;
+    width: 25%;
+    float:right;
+    margin-bottom:20px;
+}
+/*Fim Bloco*/
+/*Forms Cadastro*/
+.form_cli{
+    background: #0ff;
+    height:500px;
+    width:300px;
+    float: left;
+    margin-right:50px;
+    padding:0px 30px 30px 30px;
+}
+#btnsFormcad{
+    background: #ff0;
+    height:auto;
+    width:500px; 
+    clear:both;
+    padding: 30px;
+}
+.txt_form{
+    width: 100%;
+    height:30px;
+    font-size: 16px; 
+}
+label{
+    font-size: 24px;
+}
+/*Fim Forms Cadastros*/
+.prod_home{
+    display: inline-block;
+    margin: 10px;
+}
+.li_home{
+    width:100%;
+    padding: 0px;
+    border-bottom: 1px solid #ccc;
+}
+ul{
+    padding: 0px;
+    margin: 5px;
+}
+ul:hover{
+    /*background: #ccc;*/
+    cursor:pointer;
+}
+table{
+    color:#000;
+}
+th{
+    text-align: left;
+    border-bottom:3px double #ccc;
+}
+td{
+    border-bottom:1px solid #ccc;
+}
+tr:hover{
+    background: #ccc;
+    cursor:pointer;
+}
+.form_func1{
+    float:left;
+    width: 33%;
+}
+.TabProx{
+    background: #0f0;
+    min-height:330px;
+    width:70%;
+    float:left;
+}
+.lblCons{
+}
+.boxGrende{ 
+}
+.posi_agendar{
+    min-height:10px;
+    margin-bottom: 5px;
+}
+.lblAgendar{
+    width: 25%;
+    float:left;
+
+}
+.boxAgendar{
+    width: 75%;
+    float:right;
+ 
+}
+.limpa{
+    clear: both;
+    margin-bottom: 10px;
+}
